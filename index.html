@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quizApp</title>
-   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quizApp</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
 <body>
 
-      
-      <div class="container">
-      <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-button" class="btn-grid"></div>
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-      </div>
-      
-      <div class="controls">
-
-        <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
-        <button>Next</button>
-
-      </div>
-
+  <main class="container position-relative">
+    <div id="start" class="hide text-center">
+      <h1>quizApp</h1>
+      <button type="button" class="buttons mt-5" id="start-btn">Start!</button>
     </div>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
+    <div id="rules" class="info-box mt-5" style="width: auto">
+      <div class="info-title">quizApp Rules</div>
+      <div class="info-list">
+        <div class="info">1. You only have <span>30 seconds</span> to finish 5 questions.</div>
+        <div class="info">2. You cannot go back to a previous question.</div>
+        <div class="info">3. If you answer a question incorrectly, you are penalized 5 seconds.</div>
+      </div>
+      <!-- buttons -->
+      <div class="buttons">
+        <button class="quit btn btn-primary btn-sm"></button>
+        <button class="restart btn btn-primary btn-sm">Continue</button>
+      </div>
+    </div>
+<!-- questions row and timer -->
+    <div id="quiz-end" class="hide text-center p-5">
+      <div class="flex-direction flex-direction">
+        <h1>End of Quiz!</h1>
+        <h3 class="score"></h3>
+        <h2>Enter Initials:</h2>
+        <input type="text" id="initials" class="mt-1">
+        <button id="save-score">Submit</button>
+      </div>
+    </div>
+  </main>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
