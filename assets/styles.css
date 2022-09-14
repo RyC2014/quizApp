@@ -18,16 +18,28 @@ body {
 
 .info-box {
         width: 600px;
-        background: aliceblue;
-        border-radius: 10px;
+        background: red;
+        border-radius: 5px;
 
 
 }
 
 .info-box .info-title {
     font-size: 24px;
-
+    display: flex;
+    align-items: center;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+    border-bottom: 10px solid darkslategray;
+    height: 75px;
 }
+
+.start {
+    display: block;
+}
+
 
     
 
