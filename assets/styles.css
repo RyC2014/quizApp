@@ -1,0 +1,35 @@
+* {
+    background-color:darkslategray;
+    font-family:cursive;
+    margin: 0; 
+    box-sizing: border-box;
+    color: aliceblue;
+    
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.title {
+    border-bottom: 3px solid darkslategray;
+    
+}
+
+.info-box {
+        width: 600px;
+        background: aliceblue;
+        border-radius: 10px;
+
+
+}
+
+.info-box .info-title {
+    font-size: 24px;
+
+}
+
+    
+
+
+
